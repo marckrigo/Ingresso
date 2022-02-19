@@ -1,13 +1,24 @@
 import styled from "styled-components";
 
-export const moviesContainer = styled.div`
-  background-color: #333;
-  width: 1440px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: left;
-  padding: 20px 0 0 0;
+export const SectionHeader = styled.div`
+  display: flex;
+  font-size: 8px;
+  padding: 0 0 10px 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size:12px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+`
+
+export const SectionTitle = styled.div`
+  text-transform: uppercase;
+`
+
+export const SectionSubTitle = styled.div`
+  margin: 0 5%;
+  color: ${props => props.theme.colors.link};
 `

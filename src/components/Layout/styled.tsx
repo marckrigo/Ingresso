@@ -1,37 +1,40 @@
 import styled from "styled-components";
 
 export const imgStyled = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
+  margin: 0 auto;
   text-align: center;
-  background-color:#252525;
+  background-color: ${props => props.theme.colors.primary};
 `
 
 export const Wrapper = styled.div`
-  width: 100%;
-  float: none;
-  position: absolute;
-  box-shadow: none;
-  overflow: visible;
-  min-height: 100%;
-  background: #333;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    width: calc(100% - 20px);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    width: 1250px;
+  }
 `
 
 export const Header = styled.div`
-  background-color:#252525;
-  height: 504px;
+  background-color: ${props => props.theme.colors.primary};
 `
 
 export const Container = styled.div`
-  height: 300px;
-  background-color:#333;
-  min-height: 20px;
+  background-color: ${props => props.theme.colors.secondary};
+  padding: 10px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 20px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 30px;
+  }
 `
 
 export const Footer = styled.div`
-  background-color:#252525;
-  min-height: 500px;
+  background-color: ${props => props.theme.colors.primary};
 `

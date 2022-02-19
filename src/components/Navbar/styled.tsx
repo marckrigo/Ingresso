@@ -1,21 +1,20 @@
 import styled from "styled-components";
 
 export const NavbarTop = styled.div`
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  height: 20px;
   background: rgba(0,0,0,.8);
-  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    height: 40px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: 60px;
+  }
 `
 
 export const NavbarBottom = styled.div`
-  height: 50px;
+  /* height: 50px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background: rgba(0,0,0,.7);
-  position: relative;
+  background: rgba(0,0,0,.7); */
 `
