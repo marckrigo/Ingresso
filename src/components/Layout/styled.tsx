@@ -4,6 +4,7 @@ export const imgStyled = styled.div`
   margin: 0 auto;
   text-align: center;
   background-color: ${props => props.theme.colors.primary};
+  display: flex;
 `
 
 export const Wrapper = styled.div`
@@ -20,6 +21,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.div`
   background-color: ${props => props.theme.colors.primary};
+  display: flex;
 `
 
 export const Container = styled.div`

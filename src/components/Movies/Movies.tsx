@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import * as S from "./styled";
+import Link from "next/link";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -24,9 +25,7 @@ const Movies = () => {
     fetchMovies();
 
   }, []);
-
-  console.log(movies);
-
+  
   return (
     <>
       <S.SectionHeader>
@@ -47,12 +46,16 @@ const Movies = () => {
       >
         {movies.map((movie:any) => (
           <SwiperSlide key={movie.event.id}>
-            <Image
-							src={movie.event.images[0].url}
-							alt={movie.event.title}
-							width={320}
-							height={450}
-						/>
+            <Link href={movie.event.trailers[0].url} passHref>
+              <a target="_blannk">
+                <Image
+                  src={movie.event.images[0].url}
+                  alt={movie.event.title}
+                  width={320}
+                  height={450}
+                />
+              </a>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
