@@ -160,12 +160,18 @@ export const SiteMap = styled.ul`
   }
 
   @media only screen and (min-width: 768px) {
+    width: calc(100% - 20px);
     flex-direction: row;
     font-size:10px;
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 1250px;
     font-size: 10px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 100%;
   }
 `
 

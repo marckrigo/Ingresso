@@ -9,6 +9,7 @@ export const NavbarTop = styled.div`
   z-index: 9999;
 
   @media only screen and (min-width: 768px) {
+    width: calc(100% - 20px);
     padding: 10px;
     height: 40px;
 
@@ -19,12 +20,17 @@ export const NavbarTop = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 1250px;
     padding: 20px;
     height: 60px;
 
     & img {
       height: 40px;
     }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 100%;
   }
 `
 
@@ -50,6 +56,7 @@ export const NavbarBottom = styled.div`
   display: none;
 
   @media only screen and (min-width: 768px) {
+    width: calc(100% - 20px);
     display: flex;
     padding: 10px;
     height: 40px;
@@ -61,12 +68,17 @@ export const NavbarBottom = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 1250px;
     padding: 20px;
     height: 50px;
 
     & img {
       height: 40px;
     }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 100%;
   }
 `
 
