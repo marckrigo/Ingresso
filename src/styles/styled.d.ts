@@ -1,8 +1,7 @@
-import styled from "styled-components";
-import theme from "./theme";
+import styled from "styled-components"
+import theme from "./theme"
 
 export type Theme = typeof theme
-
 declare module 'styled-components' {
   export interface DefaultTheme extends Theme {
     colors: {
@@ -10,6 +9,6 @@ declare module 'styled-components' {
       secondary: string;
       text: string;
       link: string;
-    };
+    }
   }
 }

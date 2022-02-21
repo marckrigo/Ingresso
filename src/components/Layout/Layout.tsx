@@ -1,11 +1,11 @@
 import Head from "next/head"
 import Image from "next/image"
 import Navbar from "../Navbar"
-import Footer from "../Footer";
+import Footer from "../Footer"
 
-import imgDestaque from '../../images/destaque.jpg';
+import imgDestaque from '../../images/destaque.jpg'
 
-import * as S from "./styled";
+import * as S from "./styled"
 
 const Layout = ({ children, title}:{children:any, title:any}) => {
 	return (
@@ -19,7 +19,7 @@ const Layout = ({ children, title}:{children:any, title:any}) => {
 					<S.imgStyled>
 						<Image
 							src={imgDestaque}
-							alt="Destque"
+							alt="Banner de destaque do filme malévola"
 							width={1440}
 							height={500}
 						/>
@@ -27,16 +27,17 @@ const Layout = ({ children, title}:{children:any, title:any}) => {
 				</S.Header>
 
 				<S.Container>
-				<main>
-					{children}
-				</main>
+					<S.Content>
+					<main>
+						{children}
+					</main>
+					</S.Content>
 				</S.Container>
 
 				<S.Footer>
 					< Footer />
 				</S.Footer>
 			</S.Wrapper>
-
 		</>
 	)
 }

@@ -22,18 +22,3 @@ export const SectionTitle = styled.div`
     padding: 50px 0 10px;
   }
 `
-
-export const SectionSubTitle = styled.div`
-  margin: 0 5%;
-  padding: 10px 0 10px;
-  color: ${props => props.theme.colors.link};
-
-  & a {
-    color: ${props => props.theme.colors.link};
-    text-decoration: none;
-  }
-
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0 10px;
-  }
-`

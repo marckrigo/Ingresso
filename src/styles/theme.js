@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const defaultTheme = {
   colors: {
@@ -15,9 +15,19 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
   body {
     background-color: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.text};
-    font: 400 16px Roboto, sans-serif;
+    font: 400 16px Proxima Nova, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.link};
+  }
+
+  a:hover {
+    opacity: 0.8;
   }
 `

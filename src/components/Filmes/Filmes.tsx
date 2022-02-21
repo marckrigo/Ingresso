@@ -29,19 +29,12 @@ const Movies = () => {
     <>
       <S.SectionHeader>
         <S.SectionTitle>
-          Em Cartaz
+          Filmes
         </S.SectionTitle>
-        <S.SectionSubTitle>
-          <a 
-            href="https://www.ingresso.com/filmes" 
-            target="_blank" 
-            rel="noreferrer">Ver todos
-          </a>
-        </S.SectionSubTitle>
       </S.SectionHeader>
       
       <Swiper
-        slidesPerView={4}
+        slidesPerView={5}
         spaceBetween={10}
         loopFillGroupWithBlank={false}
         pagination={{
@@ -60,8 +53,8 @@ const Movies = () => {
               <Image
                 src={movie.event.images[0].url}
                 alt={movie.event.title}
-                width={320}
-                height={450}
+                width={420}
+                height={650}
               />
             </a>
           </SwiperSlide>
