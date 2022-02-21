@@ -79,13 +79,22 @@ const Navbar = () => {
                   Filmes
                 </Link>
               </li>
-              <a href="#">
+              <a 
+                href="https://www.ingresso.com/cinema" 
+                target="_blank"
+                rel="noreferrer">
                 <li>Cinemas</li>
               </a>
-              <a href="#">
+              <a 
+                href="https://www.ingresso.com/noticias"
+                target="_blank"
+                rel="noreferrer">
                 <li>Eventos</li>
               </a>
-              <a href="#">
+              <a 
+                href="https://rockinrio.ingresso.com/"
+                target="_blank"
+                rel="noreferrer">
                 <li>Rock in Rio</li>
               </a>
           </ul>
