@@ -9,8 +9,8 @@ import * as S from "./styled"
 
 const Navbar = () => {
 
-  const city = useContextSelector(CityContext, context => context.city)
-  const setCity = useContextSelector(CityContext, context => context.setCity)
+  const city = useContextSelector(CityContext, context => context?.city)
+  const setCity = useContextSelector(CityContext, context => context?.setCity)
 
   const toggleCity = () => { 
     const newCity = city === '1' ? '2' : '1'
