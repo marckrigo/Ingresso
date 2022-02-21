@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
-// import { CityContext } from "../../context/City"
+import { CityContext } from "../../context/City"
 
 import { HiOutlineLocationMarker, HiOutlineUser, HiOutlineQuestionMarkCircle } from 'react-icons/hi'
 import { useContextSelector } from "use-context-selector"
@@ -9,13 +9,13 @@ import * as S from "./styled"
 
 const Navbar = () => {
 
-  // const city = useContextSelector(CityContext, context => context.city)
-  // const setCity = useContextSelector(CityContext, context => context.setCity)
-  
-  // const toggleCity = () => { 
-  //   const newCity = city === 'sao-paulo' ? 'rio-de-janeiro' : 'sao-paulo'
-  //   setCity(newCity)
-  // }
+  const city = useContextSelector(CityContext, context => context.city)
+  const setCity = useContextSelector(CityContext, context => context.setCity)
+
+  const toggleCity = () => { 
+    const newCity = city === '1' ? '2' : '1'
+    setCity(newCity)
+  }
 
   return (
     <>
@@ -37,7 +37,7 @@ const Navbar = () => {
               <input type="text" placeholder="Pesquise por filmes, cinemas…" />
             </S.SearchBox>
 
-            <S.NavbarControler>
+            <S.NavbarControler onClick={toggleCity}>
               <a href="#"
                 rel="noreferrer">
                 Cidade

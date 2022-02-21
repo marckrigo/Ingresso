@@ -10,11 +10,12 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 
 import * as S from "./styled"
+import { CityContext } from "../../context/City"
+import { useContext } from "use-context-selector"
 
 const Movies = () => {
+  const { city } = useContext(CityContext)
 
-  const city = '1';
-  
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
@@ -26,7 +27,7 @@ const Movies = () => {
 
     fetchMovies()
 
-  }, []);
+  }, [city]);
   
   return (
     <>
@@ -63,6 +64,7 @@ const Movies = () => {
               <Image
                 src={movie.event.images[0].url}
                 alt={movie.event.title}
+                data-city={movie.event.city}
                 width={320}
                 height={450}
               />
