@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const NavbarTop = styled.div`
   margin: 0 auto;
@@ -31,20 +31,6 @@ export const NavbarTop = styled.div`
 
   @media only screen and (min-width: 1440px) {
     width: 100%;
-  }
-`
-
-export const NavbarContent = styled.div`
-  margin: 0 auto;
-  padding: 10px;
-  display: flex;
-
-  @media only screen and (min-width: 768px) {
-    width: calc(100% - 20px);
-  }
-
-  @media only screen and (min-width: 1024px) {
-    width: 1250px;
   }
 `
 
@@ -82,6 +68,20 @@ export const NavbarBottom = styled.div`
   }
 `
 
+export const NavbarContent = styled.div`
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+
+  @media only screen and (min-width: 768px) {
+    width: calc(100% - 20px);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    width: 1250px;
+  }
+`
+
 export const NavbarTitle = styled.span`
   color: ${props => props.theme.colors.link};
   font-size: 14px;
@@ -106,6 +106,12 @@ export const NavbarLeft = styled.section`
     display: flex;
     align-items: center;
   }
+`
+
+export const NavbarRight = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 `
 
 export const NavbarBottomLeft = styled.section`
@@ -143,12 +149,6 @@ export const NavbarBottomRight = styled.section`
   @media only screen and (min-width: 1024px) {
     font-size: 14px;
   }
-`
-
-export const NavbarRight = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
 `
 
 export const NavbarControler = styled.span`

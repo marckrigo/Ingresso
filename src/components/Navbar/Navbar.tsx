@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
 
-import { HiOutlineLocationMarker, HiOutlineUser, HiOutlineQuestionMarkCircle } from 'react-icons/hi';
+import { HiOutlineLocationMarker, HiOutlineUser, HiOutlineQuestionMarkCircle } from 'react-icons/hi'
 
-import * as S from "./styled";
+import * as S from "./styled"
 
 const Navbar = () => {
   return (
@@ -83,4 +83,4 @@ const Navbar = () => {
   )
 }
  
-export default Navbar;
+export default Navbar

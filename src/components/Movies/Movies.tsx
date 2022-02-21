@@ -64,6 +64,12 @@ const Movies = () => {
                 height={450}
               />
             </a>
+            <S.FigCaption>
+              <S.FigDate>
+                {movie.event.premiereDate.dayAndMonth + "/" + movie.event.premiereDate.year} 
+              </S.FigDate>
+              {movie.event.title}
+            </S.FigCaption>
           </SwiperSlide>
         ))}
       </Swiper>

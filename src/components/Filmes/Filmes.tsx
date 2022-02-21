@@ -10,6 +10,7 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 
 import * as S from "./styled"
+import { FigCaption, FigDate } from "../Movies/styled"
 
 const Movies = () => {
   const [movies, setMovies] = useState([])
@@ -57,6 +58,12 @@ const Movies = () => {
                 height={650}
               />
             </a>
+            <FigCaption>
+              <FigDate>
+                {movie.event.premiereDate.dayAndMonth + "/" + movie.event.premiereDate.year} 
+              </FigDate>
+              {movie.event.title}
+            </FigCaption>
           </SwiperSlide>
         ))}
       </Swiper>
