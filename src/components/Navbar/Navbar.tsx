@@ -40,7 +40,7 @@ const Navbar = () => {
             <S.NavbarControler onClick={toggleCity}>
               <a href="#"
                 rel="noreferrer">
-                Cidade
+                {city === '1' ? 'São Paulo' : 'Rio de Janeiro'}
                 <S.NavbarIcon>
                   <HiOutlineLocationMarker className="icon-navbar" />
                 </S.NavbarIcon>
