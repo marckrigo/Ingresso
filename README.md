@@ -15,4 +15,4 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Demo
-  You can check out in vercel by [clicking here](https://vercel.com/marckrigo/ingresso)
+  You can check out in vercel by [clicking here](https://ingresso.vercel.app/)
