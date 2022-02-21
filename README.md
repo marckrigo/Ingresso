@@ -1,6 +1,6 @@
 ## Ingresso.com
 
-Project with the intention of replicating the layout of the [http://ingresso.com](http://ingresso.com) front-end test
+Project with the intention of replicating the layout of [http://ingresso.com](http://ingresso.com) to a front-end test
 
 ## Getting Started
 
