@@ -39,13 +39,13 @@ export const FooterTop = styled.div`
   & .li-social-media {
     
     @media only screen and (min-width: 1024px) {
-      margin-left: -125px;
+      margin-left: -150px;
     }
   }
 
   & .li-help {
     @media only screen and (min-width: 1024px) {
-      margin-right: 135px;
+      margin-right: 150px;
     }
   }
 
@@ -167,7 +167,7 @@ export const SiteMap = styled.ul`
 
   @media only screen and (min-width: 1024px) {
     width: 1250px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   @media only screen and (min-width: 1440px) {
@@ -217,5 +217,7 @@ export const BtnHelp = styled.div`
 `
 
 export const Copyright = styled.div`
-
+  color: #979797;
+  font-size: 10px;
+  padding: 50px 0 0 0;
 `

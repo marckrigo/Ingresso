@@ -6,6 +6,7 @@ import Footer from "../Footer"
 import imgDestaque from '../../images/destaque.jpg'
 
 import * as S from "./styled"
+import { FigCap, FigCaption, FigCaptionMain, FigDate, FigDateFamily } from "../Movies/styled"
 
 const Layout = ({ children, title}:{children:any, title:any}) => {
 	return (
@@ -23,6 +24,21 @@ const Layout = ({ children, title}:{children:any, title:any}) => {
 							width={1440}
 							height={500}
 						/>
+						<FigCaptionMain>
+							<FigDateFamily>
+                Família
+              </FigDateFamily>
+              <FigDate>
+                Em Alta
+              </FigDate>
+							<h2>Malévola - Dona do Mal</h2>
+							<FigCap>
+								Aventura
+							</FigCap>
+							<FigCap>
+								Fantasia
+							</FigCap>
+            </FigCaptionMain>
 					</S.imgStyled>
 				</S.Header>
 

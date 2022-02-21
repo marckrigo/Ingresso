@@ -60,7 +60,7 @@ const Movies = () => {
             </a>
             <FigCaption>
               <FigDate>
-                {movie.event.premiereDate.dayAndMonth + "/" + movie.event.premiereDate.year} 
+                Em Alta
               </FigDate>
               {movie.event.title}
             </FigCaption>

@@ -1,12 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
-import React from "react"
+// import { CityContext } from "../../context/City"
 
 import { HiOutlineLocationMarker, HiOutlineUser, HiOutlineQuestionMarkCircle } from 'react-icons/hi'
+import { useContextSelector } from "use-context-selector"
 
 import * as S from "./styled"
 
 const Navbar = () => {
+
+  // const city = useContextSelector(CityContext, context => context.city)
+  // const setCity = useContextSelector(CityContext, context => context.setCity)
+  
+  // const toggleCity = () => { 
+  //   const newCity = city === 'sao-paulo' ? 'rio-de-janeiro' : 'sao-paulo'
+  //   setCity(newCity)
+  // }
+
   return (
     <>
       <S.NavbarTop>
@@ -28,10 +38,13 @@ const Navbar = () => {
             </S.SearchBox>
 
             <S.NavbarControler>
-              Cidade
-              <S.NavbarIcon>
-                <HiOutlineLocationMarker className="icon-navbar" />
-              </S.NavbarIcon>
+              <a href="#"
+                rel="noreferrer">
+                Cidade
+                <S.NavbarIcon>
+                  <HiOutlineLocationMarker className="icon-navbar" />
+                </S.NavbarIcon>
+              </a>
             </S.NavbarControler>
 
             <S.NavbarControler >
@@ -84,3 +97,7 @@ const Navbar = () => {
 }
  
 export default Navbar
+function BaseContext(BaseContext: any, arg1: (context: unknown) => any) {
+  throw new Error("Function not implemented.")
+}
+

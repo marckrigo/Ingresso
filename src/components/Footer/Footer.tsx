@@ -263,7 +263,8 @@ const Footer = () => {
           </li>
          </S.SiteMap>
          <S.Copyright>
-
+          <p>Ingresso.com Ltda / CNPJ: 00.860.640/0001-71 <strong>Endereço</strong>: Rua da Quitanda, 86 - 9º andar - Centro - RJ - 20091-005</p>
+          <a href="https://atendimento.ingresso.com/hc/pt-br" target="_blank" rel="noreferrer">Atendimento ao cliente</a> © 2022 - Copyright Ingresso.com - todos os direitos reservados
          </S.Copyright>
        </S.FooterContent>
       </S.FooterContainer>

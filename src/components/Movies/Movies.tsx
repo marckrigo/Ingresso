@@ -12,11 +12,14 @@ import "swiper/css/navigation"
 import * as S from "./styled"
 
 const Movies = () => {
+
+  const city = '1';
+  
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const {data} = await axios.get(`https://api-content.ingresso.com/v0/templates/highlights/1/partnership/home`)
+      const {data} = await axios.get(`https://api-content.ingresso.com/v0/templates/highlights/${city}/partnership/home`)
 
       setMovies(data)
     };
@@ -66,7 +69,8 @@ const Movies = () => {
             </a>
             <S.FigCaption>
               <S.FigDate>
-                {movie.event.premiereDate.dayAndMonth + "/" + movie.event.premiereDate.year} 
+                {/* {movie.event.premiereDate.dayAndMonth + "/" + movie.event.premiereDate.year}  */}
+                Em alta
               </S.FigDate>
               {movie.event.title}
             </S.FigCaption>
@@ -78,3 +82,7 @@ const Movies = () => {
 }
 
 export default Movies
+
+function BaseContext(BaseContext: any, arg1: (context: unknown) => any) {
+  throw new Error("Function not implemented.")
+}

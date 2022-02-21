@@ -7,12 +7,12 @@ import Movies from '../components/Movies'
 const Home: React.FC = () => {
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <GlobalStyles />
-      <Layout title={`Ingresso.com - Fãs de cinema`}>
-        <Movies />
-      </Layout>
-    </ThemeProvider>
+      <ThemeProvider theme={defaultTheme}>
+        <GlobalStyles />
+        <Layout title={`Ingresso.com - Fãs de cinema`}>
+          <Movies />
+        </Layout>
+      </ThemeProvider>
   )
 }
 

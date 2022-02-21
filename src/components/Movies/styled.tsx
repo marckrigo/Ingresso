@@ -55,19 +55,61 @@ export const FigCaption = styled.figcaption`
   }
 `
 
-export const FigDate = styled.div`
+export const FigCaptionMain = styled.figcaption`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: ${props => props.theme.colors.text};
+  padding: 10px;
+  box-sizing: border-box;
+  font-size:14px;
+  font-weight: bold;
+  width: 270px;
+  display:none;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+`
+
+export const FigCap = styled.div`
   color: #fff;
   background-color: transparent;
-  border: 1px solid #fff;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.21;
   padding: 0.188rem 0.5rem;
   font-weight: bold;
-  -webkit-transform: skew(-10deg);
-  -ms-transform: skew(-10deg);
-  -o-transform: skew(-10deg);
-  transform: skew(-10deg);
   margin-bottom: 0.5rem !important;
-  width: 90px;
+  width: 70px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-right: 5px;
+`
+
+export const FigDate = styled.div`
+  color: #333;
+  background-color: #f90;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1.21;
+  padding: 0.188rem 0.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem !important;
+  width: 60px;
+`
+export const FigDateFamily = styled.div`
+  color: #333;
+  background-color: #00ff62;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1.21;
+  padding: 0.188rem 0.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem !important;
+  width: 60px;
+  margin-right: 20px;
 `
